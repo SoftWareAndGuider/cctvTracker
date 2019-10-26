@@ -27990,7 +27990,7 @@
           mark.setMap(map)
 
           kakao.maps.event.addListener(mark, 'click', function() {
-            const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="padding: 5px; word-break: break-all:">설치 목적: ${d.설치목적구분}<br />주소: ${d.소재지도로명주소}<br />카메라 대수: ${d.카메라대수}대<br />카메라 화소수: ${d.카메라화소수}화소</div>` })
+            const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="height: 100px; width: 300px; padding: 20px; word-break: break-all: word-wrap: break-word;"><i class="fas fa-info-circle"></i> 설치 목적: ${d.설치목적구분|| '정보 없음'}<br />주소: ${d.소재지도로명주소|| '정보 없음'}<br />카메라 대수: ${d.카메라대수}대<br />카메라 화소수: ${d.카메라화소수 || '정보 없음'}화소</div>` })
             infowindow.open(map, mark)
             setTimeout(() => {
               infowindow.close()
@@ -28005,7 +28005,7 @@
         mark.setMap(map)
 
         kakao.maps.event.addListener(mark, 'click', function() {
-          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="padding: 5px; word-break: break-all:">설치 년도: ${d.설치년도}<br />주소: ${d.소재지도로명주소}<br />남녀 공용화장실 여/부: ${d.남녀공용화장실여부 === 'N' ? '아니요' : '네'}</div>` })
+          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="height: 100px; width: 300px; padding: 20px; word-break: break-all: word-wrap: break-word;"><i class="fas fa-info-circle"></i> 설치 년도: ${d.설치년도|| '정보 없음'}<br />주소: ${d.소재지도로명주소|| '정보 없음'}<br />남녀 공용화장실 여/부: ${d.남녀공용화장실여부 === 'N' ? '아니요' : '네'|| '정보 없음'}</div>` })
           infowindow.open(map, mark)
           setTimeout(() => {
             infowindow.close()
@@ -28020,7 +28020,7 @@
         mark.setMap(map)
 
         kakao.maps.event.addListener(mark, 'click', function() {
-          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="padding: 5px; word-break: break-all:">설치 년도: ${d.설치년도}<br />주소: ${d.소재지도로명주소}<br />남녀 공용화장실 여/부: ${d.남녀공용화장실여부 === 'N' ? '아니요' : '네'}</div>` })
+          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="height: 100px; width: 300px; padding: 20px; word-break: break-all: word-wrap: break-word;"><i class="fas fa-info-circle"></i> 설치 년도: ${d.설치년도|| '정보 없음'}<br />주소: ${d.소재지도로명주소|| '정보 없음'}<br />남녀 공용화장실 여/부: ${d.남녀공용화장실여부 === 'N' ? '아니요' : '네'|| '정보 없음'}</div>` })
           infowindow.open(map, mark)
           setTimeout(() => {
             infowindow.close()

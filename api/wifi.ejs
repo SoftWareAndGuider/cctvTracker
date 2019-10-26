@@ -1813,7 +1813,7 @@
         mark.setMap(map)
 
         kakao.maps.event.addListener(mark, 'click', function() {
-          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="padding: 5px; word-break: break-all:"와이파이 이름: ${d.와이파이SSID}<br />주소: ${d.소재지도로명주소}<br />제공 업체: ${d.서비스제공사명}<br />관리자 전화번호${d.관리기관전화번호}</div>` })
+          const infowindow = new kakao.maps.InfoWindow({ position: new kakao.maps.LatLng(d.위도, d.경도), content: `<div style="height: 100px; width: 300px; padding: 20px; word-break: break-all: word-wrap: break-word;"와이파이 이름: ${d.와이파이SSID|| '정보 없음'}<br />주소: ${d.소재지도로명주소|| '정보 없음'}<br />제공 업체: ${d.서비스제공사명|| '정보 없음'}<br />관리자 전화번호${d.관리기관전화번호|| '정보 없음'}</div>` })
           infowindow.open(map, mark)
           setTimeout(() => {
             infowindow.close()
