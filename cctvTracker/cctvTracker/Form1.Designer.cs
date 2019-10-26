@@ -29,34 +29,47 @@
         private void InitializeComponent()
         {
             this.toIframe = new System.Windows.Forms.WebBrowser();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // toIframe
             // 
-            this.toIframe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toIframe.Location = new System.Drawing.Point(0, 0);
+            this.toIframe.Location = new System.Drawing.Point(12, 12);
             this.toIframe.MinimumSize = new System.Drawing.Size(20, 20);
             this.toIframe.Name = "toIframe";
             this.toIframe.ScrollBarsEnabled = false;
-            this.toIframe.Size = new System.Drawing.Size(800, 450);
+            this.toIframe.Size = new System.Drawing.Size(250, 250);
             this.toIframe.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(280, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 12);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
             // 
             // cctvTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.toIframe);
             this.Name = "cctvTracker";
             this.Text = "cctvTracker";
             this.Load += new System.EventHandler(this.cctvTracker_Load);
+            this.ResizeEnd += new System.EventHandler(this.cctvTracker_ResizeEnd);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.WebBrowser toIframe;
+        private System.Windows.Forms.Label label1;
     }
 }
 
