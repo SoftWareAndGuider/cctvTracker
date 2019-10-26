@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using CefSharp.WinForms;
 using CefSharp;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace cctvTracker
 {
@@ -21,7 +22,7 @@ namespace cctvTracker
         ChromiumWebBrowser wifibrowser;
         ChromiumWebBrowser restbrowser;
         ChromiumWebBrowser allbrowser;
-        public void browserset()
+        public async void browserset()
         {
             Cef.Initialize(new CefSettings());
             try
@@ -35,7 +36,14 @@ namespace cctvTracker
             catch
             {
                 MessageBox.Show("URL을 확인해 주세요");
-                Process.Start("url.txt");
+                URL urlform = new URL();
+                urlform.ShowDialog();
+                while (!urlform.finish) { await Task.Delay(10); }
+                url = System.IO.File.ReadAllText("url.txt");
+                cctvbrowser = new ChromiumWebBrowser($"{url}/cctv/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+                wifibrowser = new ChromiumWebBrowser($"{url}/wifi/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+                restbrowser = new ChromiumWebBrowser($"{url}/toilet/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+                allbrowser = new ChromiumWebBrowser($"{url}/all/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
             }
             allbrowser.LoadError += Allbrowser_LoadError;
             CCTV.Controls.Add(cctvbrowser);
@@ -48,11 +56,12 @@ namespace cctvTracker
             allbrowser.Dock = DockStyle.Fill;
         }
 
-        private void Allbrowser_LoadError(object sender, LoadErrorEventArgs e)
+        private async void Allbrowser_LoadError(object sender, LoadErrorEventArgs e)
         {
             MessageBox.Show("URL을 확인해 주세요");
-            Process.Start("url.txt");
-            MessageBox.Show("수정이 완료되었으면 저장 후 확인을 눌러주세요");
+            URL urlform = new URL();
+            urlform.ShowDialog();
+            while (!urlform.finish) { await Task.Delay(10); }
             url = System.IO.File.ReadAllText("url.txt");
             cctvbrowser.Load($"{url}/cctv/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
             wifibrowser.Load($"{url}/wifi/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cctvTracker", "cctvTracker\cctvTracker.csproj", "{9B836DD9-6D0E-4EEB-B72D-A94663F1F48F}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Data Map", "Data Map\Data Map.vdproj", "{38584A77-569C-46B9-95C8-1F50E572D5C3}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Data Map", "Data Map\Data Map.vdproj", "{4986C916-553E-424D-B4FC-1664F6B010F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{9B836DD9-6D0E-4EEB-B72D-A94663F1F48F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B836DD9-6D0E-4EEB-B72D-A94663F1F48F}.Release|x64.ActiveCfg = Release|x64
 		{9B836DD9-6D0E-4EEB-B72D-A94663F1F48F}.Release|x64.Build.0 = Release|x64
-		{38584A77-569C-46B9-95C8-1F50E572D5C3}.Debug|Any CPU.ActiveCfg = Debug
-		{38584A77-569C-46B9-95C8-1F50E572D5C3}.Debug|x64.ActiveCfg = Debug
-		{38584A77-569C-46B9-95C8-1F50E572D5C3}.Release|Any CPU.ActiveCfg = Release
-		{38584A77-569C-46B9-95C8-1F50E572D5C3}.Release|x64.ActiveCfg = Release
+		{4986C916-553E-424D-B4FC-1664F6B010F2}.Debug|Any CPU.ActiveCfg = Debug
+		{4986C916-553E-424D-B4FC-1664F6B010F2}.Debug|x64.ActiveCfg = Debug
+		{4986C916-553E-424D-B4FC-1664F6B010F2}.Release|Any CPU.ActiveCfg = Release
+		{4986C916-553E-424D-B4FC-1664F6B010F2}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
