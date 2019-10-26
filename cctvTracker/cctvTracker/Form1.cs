@@ -16,13 +16,22 @@ namespace cctvTracker
             browserset();
         }
         //크로미움 브라우저 가져오기
-        ChromiumWebBrowser browser;
+        ChromiumWebBrowser cctvbrowser;
+        ChromiumWebBrowser wifibrowser;
+        ChromiumWebBrowser restbrowser;
+        ChromiumWebBrowser allbrowser;
         public void browserset()
         {
             Cef.Initialize(new CefSettings());
-            browser = new ChromiumWebBrowser($"{url}/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
-            CCTV.Controls.Add(browser);
-            browser.Dock = DockStyle.Fill;
+            cctvbrowser = new ChromiumWebBrowser($"{url}/cctv/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+            wifibrowser = new ChromiumWebBrowser($"{url}/wifi/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+            restbrowser = new ChromiumWebBrowser($"{url}/toilet/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+            allbrowser = new ChromiumWebBrowser($"{url}/all/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
+            CCTV.Controls.Add(cctvbrowser);
+            Freewifi.Controls.Add(wifibrowser);
+            restroom.Controls.Add(restbrowser);
+            All.Controls.Add(allbrowser);
+            cctvbrowser.Dock = DockStyle.Fill;
         }
 
         private void cctvTracker_Load(object sender, EventArgs e)
