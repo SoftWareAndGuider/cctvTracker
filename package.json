@@ -1,0 +1,25 @@
+{
+  "name": "cctvtracker",
+  "version": "1.0.0",
+  "description": "CCTV Tracker for 1st Gyeongsangbuk-do Software Hackerton",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftWareAndGuider/cctvTracker.git"
+  },
+  "author": "박민혁, 임태현",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoftWareAndGuider/cctvTracker/issues"
+  },
+  "homepage": "https://github.com/SoftWareAndGuider/cctvTracker#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
