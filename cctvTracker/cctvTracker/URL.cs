@@ -20,10 +20,18 @@ namespace cctvTracker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.IO.File.WriteAllText("url.txt",textBox1.Text);
-            finish = true;
-            MessageBox.Show("입력이 완료되었습니다", "완료");
-            this.Close();
+            try
+            {
+                System.IO.File.WriteAllText("url.txt", textBox1.Text);
+                finish = true;
+                MessageBox.Show("입력이 완료되었습니다", "완료");
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("관리자 권한으로 프로그램을 실행해 주세요");
+                Application.Exit();
+            }
         }
     }
 }
