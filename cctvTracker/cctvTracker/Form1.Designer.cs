@@ -28,72 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.restroom = new System.Windows.Forms.TabPage();
-            this.bell = new System.Windows.Forms.TabPage();
+            this.TabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.CCTV = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.Freewifi = new System.Windows.Forms.TabPage();
+            this.restroom = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.TabControl1.SuspendLayout();
+            this.CCTV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // TabControl1
             // 
-            this.tabControl1.Controls.Add(this.CCTV);
-            this.tabControl1.Controls.Add(this.restroom);
-            this.tabControl1.Controls.Add(this.bell);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 450);
-            this.tabControl1.TabIndex = 1;
-            // 
-            // restroom
-            // 
-            this.restroom.Location = new System.Drawing.Point(4, 22);
-            this.restroom.Name = "restroom";
-            this.restroom.Padding = new System.Windows.Forms.Padding(3);
-            this.restroom.Size = new System.Drawing.Size(792, 424);
-            this.restroom.TabIndex = 1;
-            this.restroom.Text = "공중화장실";
-            this.restroom.UseVisualStyleBackColor = true;
-            // 
-            // bell
-            // 
-            this.bell.Location = new System.Drawing.Point(4, 22);
-            this.bell.Name = "bell";
-            this.bell.Size = new System.Drawing.Size(792, 424);
-            this.bell.TabIndex = 2;
-            this.bell.Text = "비상벨";
-            this.bell.UseVisualStyleBackColor = true;
+            this.TabControl1.Controls.Add(this.CCTV);
+            this.TabControl1.Controls.Add(this.Freewifi);
+            this.TabControl1.Controls.Add(this.restroom);
+            this.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl1.Location = new System.Drawing.Point(0, 0);
+            this.TabControl1.Name = "TabControl1";
+            this.TabControl1.SelectedIndex = 0;
+            this.TabControl1.Size = new System.Drawing.Size(800, 450);
+            this.TabControl1.TabIndex = 0;
+            this.TabControl1.UseSelectable = true;
             // 
             // CCTV
             // 
-            this.CCTV.Location = new System.Drawing.Point(4, 22);
+            this.CCTV.Controls.Add(this.pictureBox3);
+            this.CCTV.Controls.Add(this.pictureBox2);
+            this.CCTV.Controls.Add(this.pictureBox1);
+            this.CCTV.Location = new System.Drawing.Point(4, 38);
             this.CCTV.Name = "CCTV";
-            this.CCTV.Size = new System.Drawing.Size(792, 424);
-            this.CCTV.TabIndex = 3;
+            this.CCTV.Size = new System.Drawing.Size(792, 408);
+            this.CCTV.TabIndex = 0;
             this.CCTV.Text = "CCTV";
-            this.CCTV.UseVisualStyleBackColor = true;
+            // 
+            // Freewifi
+            // 
+            this.Freewifi.Location = new System.Drawing.Point(4, 38);
+            this.Freewifi.Name = "Freewifi";
+            this.Freewifi.Size = new System.Drawing.Size(792, 408);
+            this.Freewifi.TabIndex = 1;
+            this.Freewifi.Text = "무료 WIFI";
+            // 
+            // restroom
+            // 
+            this.restroom.Location = new System.Drawing.Point(4, 38);
+            this.restroom.Name = "restroom";
+            this.restroom.Size = new System.Drawing.Size(792, 408);
+            this.restroom.TabIndex = 2;
+            this.restroom.Text = "공중 화장실";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(767, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 408);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 387);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(792, 25);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 408);
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // cctvTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.TabControl1);
             this.Name = "cctvTracker";
             this.Load += new System.EventHandler(this.cctvTracker_Load);
             this.ResizeEnd += new System.EventHandler(this.cctvTracker_ResizeEnd);
-            this.tabControl1.ResumeLayout(false);
+            this.TabControl1.ResumeLayout(false);
+            this.CCTV.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage restroom;
-        private System.Windows.Forms.TabPage bell;
+
+        private MetroFramework.Controls.MetroTabControl TabControl1;
         private System.Windows.Forms.TabPage CCTV;
+        private System.Windows.Forms.TabPage Freewifi;
+        private System.Windows.Forms.TabPage restroom;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

@@ -15,11 +15,12 @@ namespace cctvTracker
             InitializeComponent();
             browserset();
         }
+        //크로미움 브라우저 가져오기
         ChromiumWebBrowser browser;
         public void browserset()
         {
             Cef.Initialize(new CefSettings());
-            browser = new ChromiumWebBrowser($"{url}/776/344");
+            browser = new ChromiumWebBrowser($"{url}/{Screen.PrimaryScreen.Bounds.Width}/{Screen.PrimaryScreen.Bounds.Height}");
             CCTV.Controls.Add(browser);
             browser.Dock = DockStyle.Fill;
         }
@@ -30,7 +31,6 @@ namespace cctvTracker
 
         private void cctvTracker_ResizeEnd(object sender, EventArgs e)
         {
-            browser.Load($"{url}/{browser.Size.Width}/{browser.Size.Height}");
         }
     }
 }
