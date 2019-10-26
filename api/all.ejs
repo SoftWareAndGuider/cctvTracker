@@ -27976,6 +27976,10 @@
           center: new kakao.maps.LatLng(36.0763671, 128.4116386), //지도의 중심좌표.
           level: 10 //지도의 레벨(확대, 축소 정도)
         };
+        
+        if (navigator.geolocation) navigator.geolocation.getCurrentPosition((potition) => {
+          options.center = new kakao.maps.LatLng(potition.coords.latitude, potition.coords.longitude)
+        })
 
         var imageSrc = 'http://octopusnetworks.co.uk/wp-content/uploads/2019/07/octopus-networks-cctv-icon.png', // 마커이미지의 주소입니다    
             imageSize = new kakao.maps.Size(30, 30), // 마커이미지의 크기입니다
