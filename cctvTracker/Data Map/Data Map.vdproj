@@ -58,7 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_362056072467D1C4E36D7FB0E0447A83"
-        "OwnerKey" = "8:_6795B3B71A2B4D9E88CAD730DC0EDD57"
+        "OwnerKey" = "8:_24A80C87BB3B48D099D9FA6382C71A03"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,7 +70,7 @@
         "Entry"
         {
         "MsmKey" = "8:_362056072467D1C4E36D7FB0E0447A83"
-        "OwnerKey" = "8:_24A80C87BB3B48D099D9FA6382C71A03"
+        "OwnerKey" = "8:_6795B3B71A2B4D9E88CAD730DC0EDD57"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -250,19 +250,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1E115B7990A0A51895E2861BD1833DA3"
+        "OwnerKey" = "8:_6795B3B71A2B4D9E88CAD730DC0EDD57"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_E90A483A14C648D0BD0A0DBF2AAD8039"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_24A80C87BB3B48D099D9FA6382C71A03"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -280,18 +274,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6795B3B71A2B4D9E88CAD730DC0EDD57"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_362056072467D1C4E36D7FB0E0447A83"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_B0DBE8D8A31B8C61ECFF5018E1DD1346"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -299,6 +281,24 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_70CEFEA26618C54503B5C4F599173D5C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1E115B7990A0A51895E2861BD1833DA3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_24A80C87BB3B48D099D9FA6382C71A03"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_362056072467D1C4E36D7FB0E0447A83"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -319,6 +319,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -335,6 +351,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1169,9 +1193,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Data Map"
+        "ProductName" = "8:TheDataMap"
         "ProductCode" = "8:{1E2ADF65-F5DB-43CA-B0BD-3F0ABED97373}"
-        "PackageCode" = "8:{73D30FD9-7CAB-4379-AA9F-7909490EAAE3}"
+        "PackageCode" = "8:{ABF6A771-7A4B-43B3-B2CF-60CD2F8FE2FB}"
         "UpgradeCode" = "8:{CE517C24-33BB-4186-8235-507D49727CAA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
