@@ -13,7 +13,7 @@ layoutSync()
 const app = express()
 app.use(cors())
 
-app.get('/favicon.ico', (req, res) => console.log('Connection Sucessful (' + req.ip + ')'))
+app.get('/favicon.ico', (req, res) => console.log(chalk.bgGreen.black('Browser Connection Sucessful (' + req.ip + ')')))
 
 app.get('/api/data/:type', (req, res) => {
   console.log(chalk.yellow('/api/data/' + req.params.type) + ' | ' + chalk.magenta(req.ip))
@@ -81,7 +81,7 @@ app.get('/api/map/:type/:width/:height', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(chalk.green('CCTV Tracker BackEnd Server is on http://localhost:') + chalk.green.bold(PORT))
+  console.log(chalk.green('The Data Map : 나를 도와줘 BackEnd Server is on http://localhost:') + chalk.green.bold(PORT))
 })
 
 function layoutSync () {
@@ -90,6 +90,7 @@ function layoutSync () {
     files.forEach((file) => {
       ejs.renderFile(path + '/layout/' + file, (err, str) => {
         if (err) console.log(chalk.red(err))
+        console.log(chalk.blue('Load Layout') + ' | ' + chalk.magenta(file))
         layout[file.replace('.ejs', '')] = str
       })
     })
