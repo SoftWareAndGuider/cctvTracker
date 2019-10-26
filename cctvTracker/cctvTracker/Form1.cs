@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net;
 using System.Windows.Forms;
+using CefSharp.WinForms;
+using CefSharp;
 
 namespace cctvTracker
 {
@@ -18,22 +13,24 @@ namespace cctvTracker
         public cctvTracker()
         {
             InitializeComponent();
+            browserset();
+        }
+        ChromiumWebBrowser browser;
+        public void browserset()
+        {
+            Cef.Initialize(new CefSettings());
+            browser = new ChromiumWebBrowser($"{url}/776/344");
+            CCTV.Controls.Add(browser);
+            browser.Dock = DockStyle.Fill;
         }
 
         private void cctvTracker_Load(object sender, EventArgs e)
         {
-            WebClient client = new WebClient();
-            //show map in display (화면에 지도 표시하기)
-            toIframe.Navigate($"{url}/{toIframe.Size.Width}/{toIframe.Size.Height}");
-            label1.Text = client.DownloadString($"{url}/{toIframe.Size.Width}/{toIframe.Size.Height}");
-            Text = "finish";
         }
 
         private void cctvTracker_ResizeEnd(object sender, EventArgs e)
         {
-            Text = "start";
-            toIframe.Navigate($"{url}/{toIframe.Size.Width}/{toIframe.Size.Height}");
-            Text = "end";
+            browser.Load($"{url}/{browser.Size.Width}/{browser.Size.Height}");
         }
     }
 }
