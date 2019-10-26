@@ -8,15 +8,12 @@ const chalk = require('chalk')
 const express = require('express')
 
 const layout = {}
-fs.readdir(path + '/layout', (err, files) => {
-  if (err) console.log(chalk.red(err))
-  files.forEach((file) => {
-    layout[file] = fs.readFileSync(path + '/' + file)
-  })
-})
+layoutSync()
 
 const app = express()
 app.use(cors())
+
+app.get('/favicon.ico', (req, res) => console.log('Connection Sucessful (' + req.ip + ')'))
 
 app.get('/api/data/:type', (req, res) => {
   console.log(chalk.yellow('/api/data/' + req.params.type) + ' | ' + chalk.magenta(req.ip))
@@ -35,6 +32,16 @@ app.get('/api/data/:type', (req, res) => {
   }
 })
 
+app.get('/', (_req, res) => res.redirect('/index'))
+
+app.get('/:page', (req, res) => {
+  layoutSync()
+  ejs.renderFile(path + '/page/' + req.params.page + '.ejs', { layout }, (err, str) => {
+    if (err) console.log(chalk.red(err))
+    else res.send(str)
+  })
+})
+
 app.get('/api/map/:type/:width/:height', (req, res) => {
   console.log(chalk.yellow('/api/map/' + req.params.type) + ' | ' + chalk.magenta(req.ip))
 
@@ -46,12 +53,26 @@ app.get('/api/map/:type/:width/:height', (req, res) => {
       })
       break
 
-      case 'toilet':
-        ejs.renderFile(path + '/api/toilet.ejs', { layout, mapH: req.params.height, mapW: req.params.width }, (err, str) => {
-          if (err) console.log(chalk.red(err))
-          else res.send(str)
-        })
-        break
+    case 'toilet':
+      ejs.renderFile(path + '/api/toilet.ejs', { layout, mapH: req.params.height, mapW: req.params.width }, (err, str) => {
+        if (err) console.log(chalk.red(err))
+        else res.send(str)
+      })
+      break
+
+    case 'wifi':
+      ejs.renderFile(path + '/api/wifi.ejs', { layout, mapH: req.params.height, mapW: req.params.width }, (err, str) => {
+        if (err) console.log(chalk.red(err))
+        else res.send(str)
+      })
+      break
+      
+    case 'all':
+      ejs.renderFile(path + '/api/all.ejs', { layout, mapH: req.params.height, mapW: req.params.width }, (err, str) => {
+        if (err) console.log(chalk.red(err))
+        else res.send(str)
+      })
+      break
 
     default:
       res.sendStatus(404)
@@ -62,3 +83,15 @@ app.get('/api/map/:type/:width/:height', (req, res) => {
 app.listen(PORT, () => {
   console.log(chalk.green('CCTV Tracker BackEnd Server is on http://localhost:') + chalk.green.bold(PORT))
 })
+
+function layoutSync () {
+  fs.readdir(path + '/layout', (err, files) => {
+    if (err) console.log(chalk.red(err))
+    files.forEach((file) => {
+      ejs.renderFile(path + '/layout/' + file, (err, str) => {
+        if (err) console.log(chalk.red(err))
+        layout[file.replace('.ejs', '')] = str
+      })
+    })
+  })
+}
