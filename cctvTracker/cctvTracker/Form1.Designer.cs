@@ -71,6 +71,7 @@
             this.TabControl1.Controls.Add(this.Freewifi);
             this.TabControl1.Controls.Add(this.restroom);
             this.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl1.ItemSize = new System.Drawing.Size(68, 34);
             this.TabControl1.Location = new System.Drawing.Point(0, 0);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 0;
@@ -83,6 +84,7 @@
             this.All.Controls.Add(this.pictureBox11);
             this.All.Controls.Add(this.pictureBox10);
             this.All.Controls.Add(this.pictureBox9);
+            this.All.Font = new System.Drawing.Font("배달의민족 한나", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.All.Location = new System.Drawing.Point(4, 38);
             this.All.Name = "All";
             this.All.Size = new System.Drawing.Size(792, 408);
@@ -127,6 +129,7 @@
             this.CCTV.Controls.Add(this.pictureBox3);
             this.CCTV.Controls.Add(this.pictureBox2);
             this.CCTV.Controls.Add(this.pictureBox1);
+            this.CCTV.Font = new System.Drawing.Font("배달의민족 한나", 9F);
             this.CCTV.Location = new System.Drawing.Point(4, 38);
             this.CCTV.Name = "CCTV";
             this.CCTV.Size = new System.Drawing.Size(792, 408);
@@ -171,6 +174,7 @@
             this.Freewifi.Controls.Add(this.pictureBox6);
             this.Freewifi.Controls.Add(this.pictureBox5);
             this.Freewifi.Controls.Add(this.pictureBox4);
+            this.Freewifi.Font = new System.Drawing.Font("배달의민족 한나", 9F);
             this.Freewifi.Location = new System.Drawing.Point(4, 38);
             this.Freewifi.Name = "Freewifi";
             this.Freewifi.Size = new System.Drawing.Size(792, 408);
@@ -215,6 +219,7 @@
             this.restroom.Controls.Add(this.pictureBox12);
             this.restroom.Controls.Add(this.pictureBox8);
             this.restroom.Controls.Add(this.pictureBox7);
+            this.restroom.Font = new System.Drawing.Font("배달의민족 한나", 9F);
             this.restroom.Location = new System.Drawing.Point(4, 38);
             this.restroom.Name = "restroom";
             this.restroom.Size = new System.Drawing.Size(792, 408);

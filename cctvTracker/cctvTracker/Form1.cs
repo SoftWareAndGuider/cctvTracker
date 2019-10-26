@@ -36,6 +36,10 @@ namespace cctvTracker
 
         private void cctvTracker_Load(object sender, EventArgs e)
         {
+            TabControl1.SelectedTab = CCTV;
+            TabControl1.SelectedTab = Freewifi;
+            TabControl1.SelectedTab = restroom;
+            TabControl1.SelectedTab = All;
         }
 
         private void cctvTracker_ResizeEnd(object sender, EventArgs e)
