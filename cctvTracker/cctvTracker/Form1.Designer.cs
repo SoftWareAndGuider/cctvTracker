@@ -266,7 +266,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.TabControl1);
             this.Name = "cctvTracker";
-            this.Text = "The Data Map";
+            this.Text = "The Data Map : 나를 도와줘";
             this.Load += new System.EventHandler(this.cctvTracker_Load);
             this.ResizeEnd += new System.EventHandler(this.cctvTracker_ResizeEnd);
             this.TabControl1.ResumeLayout(false);
