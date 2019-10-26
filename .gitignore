@@ -5,3 +5,4 @@
 *.ids-wal
 # lfs
 cctvTracker/cctvTracker/bin/x64/Debug/libcef.dll
+cctvTracker/packages/cef.redist.x64.75.1.14/CEF/libcef.dll
