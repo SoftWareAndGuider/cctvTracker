@@ -74,7 +74,7 @@
             this.TabControl1.ItemSize = new System.Drawing.Size(68, 34);
             this.TabControl1.Location = new System.Drawing.Point(0, 0);
             this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 0;
+            this.TabControl1.SelectedIndex = 1;
             this.TabControl1.Size = new System.Drawing.Size(800, 450);
             this.TabControl1.TabIndex = 0;
             this.TabControl1.UseSelectable = true;
@@ -163,7 +163,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(767, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(766, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 408);
             this.pictureBox1.TabIndex = 2;
