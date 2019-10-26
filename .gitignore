@@ -3,3 +3,5 @@
 *.ide
 *.ide-shm
 *.ids-wal
+# lfs
+cctvTracker/cctvTracker/bin/x64/Debug/libcef.dll
