@@ -58,13 +58,13 @@
         "Entry"
         {
         "MsmKey" = "8:_83E514E2887BBEB15D66C58F02D9DCCC"
-        "OwnerKey" = "8:_041EE470F0AE5220A0803A3DAAD4B57A"
+        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_83E514E2887BBEB15D66C58F02D9DCCC"
-        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
+        "OwnerKey" = "8:_041EE470F0AE5220A0803A3DAAD4B57A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -88,13 +88,13 @@
         "Entry"
         {
         "MsmKey" = "8:_BDE0CC558452CFCD70EA7F7C595B5B25"
-        "OwnerKey" = "8:_35C3FE8F76693F7F6D2C20B59DF466E3"
+        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_BDE0CC558452CFCD70EA7F7C595B5B25"
-        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
+        "OwnerKey" = "8:_35C3FE8F76693F7F6D2C20B59DF466E3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -112,31 +112,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_35C3FE8F76693F7F6D2C20B59DF466E3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_70AE93C14B2DC5B1F76FA5B0D131A347"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BDE0CC558452CFCD70EA7F7C595B5B25"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_041EE470F0AE5220A0803A3DAAD4B57A"
+        "OwnerKey" = "8:_83E514E2887BBEB15D66C58F02D9DCCC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +124,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_83E514E2887BBEB15D66C58F02D9DCCC"
+        "OwnerKey" = "8:_041EE470F0AE5220A0803A3DAAD4B57A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BDE0CC558452CFCD70EA7F7C595B5B25"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_70AE93C14B2DC5B1F76FA5B0D131A347"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_35C3FE8F76693F7F6D2C20B59DF466E3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_85AF22A6C6D84031ADC417C8689EC118"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -169,6 +169,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -185,6 +193,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -221,16 +237,11 @@
             "AssemblyAsmDisplayName" = "8:CefSharp.WinForms, Version=75.1.142.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_041EE470F0AE5220A0803A3DAAD4B57A"
-                    {
-                    "Name" = "8:CefSharp.WinForms.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CefSharp.WinForms.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -252,16 +263,11 @@
             "AssemblyAsmDisplayName" = "8:MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_35C3FE8F76693F7F6D2C20B59DF466E3"
-                    {
-                    "Name" = "8:MetroFramework.Fonts.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MetroFramework.Fonts.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -283,16 +289,11 @@
             "AssemblyAsmDisplayName" = "8:CefSharp.Core, Version=75.1.142.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_55FC428EE9BBE2FE755AA17B82A72806"
-                    {
-                    "Name" = "8:CefSharp.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CefSharp.Core.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -314,16 +315,11 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_6C255652B87C340B2C233C4ED0EF7EB1"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -345,16 +341,11 @@
             "AssemblyAsmDisplayName" = "8:MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_70AE93C14B2DC5B1F76FA5B0D131A347"
-                    {
-                    "Name" = "8:MetroFramework.Design.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MetroFramework.Design.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -376,16 +367,11 @@
             "AssemblyAsmDisplayName" = "8:CefSharp, Version=75.1.142.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_83E514E2887BBEB15D66C58F02D9DCCC"
-                    {
-                    "Name" = "8:CefSharp.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CefSharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -427,16 +413,11 @@
             "AssemblyAsmDisplayName" = "8:MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BDE0CC558452CFCD70EA7F7C595B5B25"
-                    {
-                    "Name" = "8:MetroFramework.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MetroFramework.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -456,7 +437,7 @@
             "SourcePath" = "8:..\\..\\..\\..\\..\\자료\\url.txt"
             "TargetName" = "8:url.txt"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -520,6 +501,17 @@
             "Property" = "8:ProgramFiles64Folder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
+                    {
+                    "Name" = "8:The Data Map"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_647F7A6F53E94F97999315108C8C0059"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_D3EDB708BC3C4225BE292A9E180FE915"
@@ -1074,7 +1066,7 @@
             "SourcePath" = "8:..\\cctvTracker\\obj\\x64\\Debug\\cctvTracker.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_A5CC47AA8BFA451BA8255D7FA929D9E1"
+            "Folder" = "8:_EC3AB69CA9D7488BB7D44A99E20EBDB6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
