@@ -1,1 +1,1 @@
-http://192.168.137.209:8080/api/map
+http://server.noeul.xyz:3003/api/map
