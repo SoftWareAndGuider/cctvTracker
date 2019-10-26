@@ -1,0 +1,9 @@
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\bin\Debug\cctvTracker.exe.config
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\bin\Debug\cctvTracker.exe
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\bin\Debug\cctvTracker.pdb
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.csprojAssemblyReference.cache
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.cctvTracker.resources
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.Properties.Resources.resources
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.csproj.GenerateResource.cache
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.exe
+C:\Users\hj666\Desktop\프로그래밍\청소년 해커톤\cctvTracker\cctvTracker\cctvTracker\obj\Debug\cctvTracker.pdb
